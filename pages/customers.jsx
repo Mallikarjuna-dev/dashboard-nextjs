@@ -10,8 +10,8 @@ const customers = () => {
         <h2>Welcome back, clint</h2>
       </div>
       <div className="p-4">
-        <div className="w-full m-auto p-4 bg-white rounded-lg overflow-y-auto">
-          <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 my-3 p-2 items-center justify-between cursor-pointer">
+        <div className="w-full m-auto p-4 border bg-white rounded-lg overflow-y-auto">
+          <div className="my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer">
             <span>Name</span>
             <span className="sm:text-left text-right">Email</span>
             <span className="hidden md:grid">Last Order</span>
@@ -21,7 +21,7 @@ const customers = () => {
             {data.map((order, id) => (
               <li
                 key={id}
-                className="bg-gray-50 hover:bg-gray-200 my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between rounded-lg cursor-pointer"
+                className="bg-gray-50 hover:bg-gray-100 my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between rounded-lg cursor-pointer"
               >
                 <div className="flex items-center">
                   <div className="bg-purple-100 p-3 rounded-lg">
